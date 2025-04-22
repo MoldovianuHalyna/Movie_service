@@ -33,7 +33,12 @@ const MovieCast = () => {
             </p>
             <img
               className={s.castImage}
-              src={`https://image.tmdb.org/t/p/w500/${castItem.profile_path}`}
+              src={
+                castItem.profile_path
+                  ? `https://image.tmdb.org/t/p/w500/${castItem.profile_path}`
+                  : "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
+              }
+              alt={castItem.name}
             />
           </li>
         );

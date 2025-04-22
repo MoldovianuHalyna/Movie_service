@@ -17,7 +17,12 @@ const MovieList = ({ movies }) => {
               <div>
                 <img
                   className={s.poster}
-                  src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                  // src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                  src={
+                    movie.poster_path
+                      ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+                      : "https://upload.wikimedia.org/wikipedia/commons/f/fc/No_picture_available.png"
+                  }
                   alt={movie.title}
                 />
                 <p className={s.title}>{movie.title}</p>
