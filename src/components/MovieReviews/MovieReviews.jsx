@@ -28,7 +28,7 @@ const MovieReviews = () => {
 
   if (reviews.length === 0)
     return (
-      <div className="glass-panel mt-12 rounded-3xl px-10 py-14 text-center">
+      <div className="glass-panel mt-12 rounded-lg px-10 py-14 text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.45em] text-aurora-500 dark:text-aurora-200">
           No reviews yet
         </p>
@@ -44,7 +44,7 @@ const MovieReviews = () => {
         return (
           <li
             key={review.id}
-            className="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/60 p-8 shadow-soft backdrop-blur-xl transition-transform duration-500 hover:-translate-y-1.5 dark:border-aurora-100/15 dark:bg-midnight/70"
+            className="group relative overflow-hidden rounded-lg border border-white/15 bg-white/60 p-8 shadow-soft backdrop-blur-xl transition-transform duration-500 hover:-translate-y-1.5 dark:border-aurora-100/15 dark:bg-midnight/70"
           >
             <p className="text-xl font-display font-semibold text-midnight dark:text-aurora-50">
               {review.author}

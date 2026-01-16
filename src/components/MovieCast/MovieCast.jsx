@@ -45,7 +45,7 @@ const MovieCast = () => {
         return (
           <li
             key={castItem.id}
-            className="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/60 p-6 shadow-soft backdrop-blur-xl transition-transform duration-500 hover:-translate-y-1.5 dark:border-aurora-100/15 dark:bg-midnight/70"
+            className="group relative overflow-hidden rounded-lg border border-white/15 bg-white/60 p-6 shadow-soft backdrop-blur-xl transition-transform duration-500 hover:-translate-y-1.5 dark:border-aurora-100/15 dark:bg-midnight/70"
           >
             <div className="flex items-center gap-5">
               <div className="relative h-20 w-20 overflow-hidden rounded-2xl">
