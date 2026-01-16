@@ -14,16 +14,16 @@ const MovieList = ({ movies }) => {
         return (
           <li
             key={movie.id}
-            className="group relative overflow-hidden rounded-3xl border border-white/15 bg-white/50 p-4 shadow-soft backdrop-blur-xl transition-transform duration-500 hover:-translate-y-2 dark:border-aurora-100/15 dark:bg-midnight/70"
+            className="group relative overflow-hidden rounded-lg border border-white/15 bg-white/50 p-4 shadow-soft backdrop-blur-xl transition-transform duration-500 hover:-translate-y-2 dark:border-aurora-100/15 dark:bg-midnight/70"
           >
             <Link
               className="flex h-full flex-col gap-6"
               to={`/movies/${movie.id}`}
               state={{ from: location }}
             >
-              <div className="relative overflow-hidden rounded-2xl">
+              <div className="relative overflow-hidden rounded-lg">
                 <img
-                  className="h-80 w-full rounded-2xl object-cover shadow-lg transition-transform duration-700 group-hover:scale-105"
+                  className="h-80 w-full rounded-lg object-cover shadow-lg transition-transform duration-700 group-hover:scale-105"
                   src={posterSrc}
                   alt={movie.title}
                 />

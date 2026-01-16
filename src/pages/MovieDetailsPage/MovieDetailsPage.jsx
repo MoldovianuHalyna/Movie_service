@@ -74,7 +74,7 @@ const MovieDetailsPage = () => {
       </div>
 
       <div className="grid gap-12 lg:grid-cols-[360px_1fr]">
-        <div className="relative overflow-hidden rounded-3xl border border-white/15 bg-white/60 shadow-soft backdrop-blur-xl dark:border-aurora-100/15 dark:bg-midnight/70">
+        <div className="relative overflow-hidden rounded-lg border border-white/15 bg-white/60 shadow-soft backdrop-blur-xl dark:border-aurora-100/15 dark:bg-midnight/70">
           <img
             className="h-full w-full object-cover"
             src={posterSrc}
@@ -101,7 +101,7 @@ const MovieDetailsPage = () => {
             </p>
           </div>
 
-          <div className="grid gap-4 rounded-3xl border border-white/15 bg-white/60 p-6 shadow-soft backdrop-blur-xl dark:border-aurora-100/15 dark:bg-midnight/70">
+          <div className="grid gap-4 rounded-lg border border-white/15 bg-white/60 p-6 shadow-soft backdrop-blur-xl dark:border-aurora-100/15 dark:bg-midnight/70">
             <p className="text-sm uppercase tracking-[0.4em] text-aurora-500 dark:text-aurora-200">
               Rating
             </p>
@@ -126,7 +126,7 @@ const MovieDetailsPage = () => {
         </div>
       </div>
 
-      <nav className="flex flex-wrap items-center gap-4 rounded-full border border-white/20 bg-white/50 px-6 py-3 shadow-soft backdrop-blur-xl dark:border-aurora-100/20 dark:bg-midnight/60">
+      <nav className="flex flex-wrap items-center gap-4 rounded-lg border border-white/20 bg-white/50 px-6 py-3 shadow-soft backdrop-blur-xl dark:border-aurora-100/20 dark:bg-midnight/60">
         <NavLink className={addActive} to="cast">
           Cast
         </NavLink>
