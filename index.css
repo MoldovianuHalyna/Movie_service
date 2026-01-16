@@ -1,11 +1,54 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
-* {
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  list-style: none;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  *,
+  *::before,
+  *::after {
+    @apply box-border;
+  }
+
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  body {
+    @apply min-h-full bg-aurora-gradient-light text-mist transition-colors duration-500 ease-out font-sans antialiased;
+  }
+
+  body.dark {
+    @apply bg-aurora-gradient text-aurora-100;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  ul {
+    @apply list-none p-0 m-0;
+  }
 }
-body {
-  text-decoration: none;
-  background-color: #99e99990;
+
+@layer utilities {
+  .glass-panel {
+    @apply backdrop-blur-xl bg-white/60 dark:bg-midnight/60 shadow-soft dark:shadow-neon;
+  }
+
+  .gradient-border {
+    background: linear-gradient(
+      135deg,
+      rgba(140, 91, 255, 0.6),
+      rgba(76, 164, 245, 0.6),
+      rgba(255, 111, 168, 0.6)
+    );
+    padding: 1px;
+    border-radius: 1.5rem;
+  }
 }
